@@ -2,76 +2,65 @@
 <html>
 <head>
 <title>Minha Leitura</title>
-<link rel="icon" 
-      type="image/png" 
+<link rel="icon"
+      type="image/png"
       href="images/favicon.png">
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
 <link href="css/hover.css" rel="stylesheet" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-    
-<!-- Custom Theme files -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="leitura, livros, gerenciador de leitura, android, aplicativo, minha leitura, biblioteca" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    
-<!--webfont-->
-<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>		
-    
-<!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-		</script>
-<!---- start-smoth-scrolling---->
+
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+		});
+	});
+</script>
 
 </head>
 <body>
-<!---->
 <div id="home" class="banner">
 	 <div class="container">
 		 <div class="col-md-6 banner-info">
-             
+
 			 <div class="logo">
 				 <a href="#home"><img src="images/logo.png" alt="" width="120"/></a>
 			 </div>
-             
-			 <!-- start slider -->			 
+
 			 <div class="flexslider">
 				 <ul class="slides">
 					 <li>
 				        <div class="tittle">
-				            
+
                             <p>Com aplicativo Minha Leitura você pode gerenciar e incentivar a leitura de livros. Cadastre livros, lance o progresso de sua leitura, insira notas e crie uma notificação para você não perder o horário da sua leitura.</br></br>Minha Leitura, cada livro no seu tempo!</p>
-                            
-                            <a href="https://play.google.com/store/apps/details?id=br.com.crewti.minhaleitura" target="_blank">
-                              <img alt="Get it on Google Play"
-                                   src="https://developer.android.com/images/brand/pt-br_generic_rgb_wo_60.png" />
+
+                            <a href="https://play.google.com/store/apps/details?id=br.com.crewti.minhaleitura&hl=pt_BR&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                                <img style="max-width: 160px;" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/pt-br-play-badge.png" />
                             </a>
 				        </div>
                      </li>
 				  </ul>
 			 </div>
-			  <!-- end slider -->			
-		 </div>		 
+		 </div>
 		 <div class="col-md-6 banner-pic">
 			 <img src="images/phone.png" alt=""/>
 		 </div>
 		 <div class="clearfix"></div>
 	 </div>
 </div>
-<!---->
-<div class="navigation">	 
+<div class="navigation">
 	 <div class="container">
 	     <div class="fixed-header">
 			 <div class="nav-logo">
@@ -84,64 +73,58 @@
 						<li><a class="scroll" href="#home">PRINCIPAL</a></li>
 						<li><a class="scroll" href="#services">COMO USAR</a></li>
 						<li><a class="scroll" href="#about">NOSSO OBJETIVO</a></li>
-						<li><a class="scroll" href="#features">REDE SOCIAL</a></li>				
+						<li><a class="scroll" href="#features">REDE SOCIAL</a></li>
 					</ul>
-				</nav>		
+				</nav>
 				</div>
 				<script>
-			$("span.menu").click(function(){
-				$(".top-menu ul").slideToggle(500, function(){
-				});
-			});
-			</script>
-
-				<!-- script for menu -->
-					<script type="text/javascript">
+        			$("span.menu").click(function(){
+        				$(".top-menu ul").slideToggle(500, function(){
+        				});
+        			});
+    			</script>
+				<script type="text/javascript">
 					jQuery(document).ready(function($) {
-						$(".scroll").click(function(event){		
+						$(".scroll").click(function(event){
 							event.preventDefault();
 							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 						});
 					});
-					</script>
+				</script>
 
-				<!-- script for menu -->
 				<script>
-			 $(document).ready(function() {
-				 var navoffeset=$(".navigation").offset().top;
-				 $(window).scroll(function(){
-					var scrollpos=$(window).scrollTop(); 
-					if(scrollpos >=navoffeset){
-						$(".navigation").addClass("fixed");
-					}else{
-						$(".navigation").removeClass("fixed");
-					}
-				 });
-				 
-			 });
-			 </script>
+        			$(document).ready(function() {
+        				 var navoffeset=$(".navigation").offset().top;
+        				 $(window).scroll(function(){
+        					var scrollpos=$(window).scrollTop();
+        					if(scrollpos >=navoffeset){
+        						$(".navigation").addClass("fixed");
+        					}else{
+        						$(".navigation").removeClass("fixed");
+        					}
+        				 });
+
+        			 });
+    			 </script>
 
 			 <div class="clearfix"></div>
 		 </div>
 	 </div>
 </div>
-<!---->
-<!-- FlexSlider -->
-  <script defer src="js/jquery.flexslider.js"></script>
-							  <script type="text/javascript">
-								$(function(){
-								  //SyntaxHighlighter.all();
-								});
-								$(window).load(function(){
-								  $('.flexslider ').flexslider({
-									animation: "slide",
-									start: function(slider){
-									  $('body').removeClass('loading');
-									}
-								  });
-								});
-							  </script>
-<!---->
+<script defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(function(){
+      //SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider ').flexslider({
+    	animation: "slide",
+    	start: function(slider){
+    	  $('body').removeClass('loading');
+    	}
+      });
+    });
+</script>
 <div id="services" class="services">
 	 <div class="container">
 		 <div class="col-md-4 sercive-grid">
@@ -161,14 +144,11 @@
 		 </div>
 	 </div>
 </div>
-<!---->
 
-<!---->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
     <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
         <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-                    <!-- //pop-up-box -->
                         <div id="small-dialog1" class="mfp-hide">
 						<div class="image-top">
 							<img src="images/pic1.jpg" alt="" />
@@ -186,38 +166,37 @@
 							<img src="images/pic3.jpg" alt="" />
 							<p>Para lançar uma leitura, basta acessar seu livro em andamento e acessando o atalho de lançamento, uma pequena janela será aberta onde você poderá atualizar a página ou capítulo do qual parou, e ainda ver em tempo real quanto falta para acabar seu livro.</p>
 						</div>
-					</div>				
+					</div>
 			</div>
 			<script>
-						$(document).ready(function() {
-						$('.popup-with-zoom-anim').magnificPopup({
-							type: 'inline',
-							fixedContentPos: false,
-							fixedBgPos: true,
-							overflowY: 'auto',
-							closeBtnInside: true,
-							preloader: false,
-							midClick: true,
-							removalDelay: 300,
-							mainClass: 'my-mfp-zoom-in'
-						});
-																						
-						});
-				</script>	
+    			$(document).ready(function() {
+        			$('.popup-with-zoom-anim').magnificPopup({
+        				type: 'inline',
+        				fixedContentPos: false,
+        				fixedBgPos: true,
+        				overflowY: 'auto',
+        				closeBtnInside: true,
+        				preloader: false,
+        				midClick: true,
+        				removalDelay: 300,
+        				mainClass: 'my-mfp-zoom-in'
+        			});
+    			});
+			</script>
 
 	     <div id="portfoliolist">
 					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
 							<a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
 						     <img src="images/pic1.jpg" class="img-responsive" alt=""/>
-							<div class="tour-caption">							
+							<div class="tour-caption">
 							<h4>Cadastro de livro</h4>
 							<span> </span>
 							</div></a>
 						</div>
-					</div>				
+					</div>
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
 							<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
 						     <img src="images/pic2.jpg" class="img-responsive" alt=""/>
 							 <div class="tour-caption">
@@ -225,9 +204,9 @@
 							<span> </span>
 						     </div></a>
 						</div>
-					</div>		
+					</div>
 					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
 							<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
 						     <img src="images/pic3.jpg" class="img-responsive" alt=""/>
 							 <div class="tour-caption">
@@ -235,14 +214,12 @@
 							 <span> </span>
 							 </div></a>
 						</div>
-					</div>				
-				  
-		   <div class="clearfix"></div>	
+					</div>
+
+		   <div class="clearfix"></div>
 	  </div>
 </div>
-<!---->
 
-<!---->
 <div id="about" class="about">
 	 <div class="container">
 		 <img src="images/book.png" alt=""/>
@@ -255,10 +232,7 @@
 		  <a class="hvr-bounce-to-top" href="#home">Baixe agora</a>
 	 </div>
 </div>
-<!---->
 
-
-<!----> 
 <script src="js/responsiveslides.min.js"></script>
 <script>
     $(function () {
@@ -287,57 +261,9 @@
 	     </div>
 	  </div>
 </div>
-<!---->
-
-<!---->
-<!-- <div id="contact" class="contact">
-	 <div class="container">
-		 <div class="contact-info">
-			 <h3>Still have questions, get back to us!</h3>
-			 <p>Please use the form below to contact us. We look forward to working with you and will get back to you as soon as possible. All fields are required.</p>
-		 </div>
-		 <div class="contact-grids">
-			 <div class="col-md-6 contact-details">
-				 <form>
-				 <li>
-					 <input type="text" class="text" value="NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NAME';}">
-					 <a class="icon11" href="#"></a>
-				 </li>
-				 <div class="clearfix"></div>
-				 <li>
-					 <input type="text" class="text" value="EMAIL" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'EMAIL';}">
-					 <a class="icon22" href="#"></a>
-				 </li>
-				 <div class="clearfix"></div>
-				 <li>
-					 <input type="text" class="text" value="PHONE" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PHONE';}">
-					 <a class="icon33 " href="#"></a>
-				 </li>
-				 <div class="clearfix"></div>
-				 </form>
-			 </div>			 
-			  <div class="col-md-6 contact-details-right">
-				 <form>
-				 <textarea onfocus="if(this.value == 'MESSAGE') this.value='';" onblur="if(this.value == '') this.value='MESSAGE';">MESSAGE</textarea>
-				 <input type="submit" value="SEND MESSAGE">
-				 </form>
-			 </div>
-			 <div class="clearfix"></div>
-		 </div>
-			 
-		 <div class="social-media">
-			 <a href="#"><i class="facebook"></i></a>
-		 </div>
-	 </div>
-</div> -->
-<!---->
-
-<!---->
 <div class="sally">
 	 <div class="container">
 		 <h3>Minha Leitura, Cada livro no seu tempo!</h3>
 	 </div>
 </div>
-<!---->
-
 </div>
