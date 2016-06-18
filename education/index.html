@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minha Leitura</title>
+<link rel="icon"
+      type="image/png"
+      href="../images/favicon.png">
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="../js/jquery.min.js"></script>
+<link href="../css/hover.css" rel="stylesheet" media="all">
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/minha-leitura.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="leitura, livros, gerenciador de leitura, android, aplicativo, minha leitura, biblioteca" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+		});
+	});
+</script>
+
+</head>
+<body>
+<div id="home" class="banner">
+	 <div class="container">
+		 <div class="col-md-6 banner-info">
+
+			 <div class="logo">
+				 <a href="#home"><img src="../images/logo.png" alt="" width="120"/></a>
+			 </div>
+
+			 <div class="flexslider">
+				 <ul class="slides">
+					 <li>
+				        <div class="tittle">
+
+                            <p>Com aplicativo Minha Leitura <i>For Education</i> você pode gerenciar e incentivar seus alunos a leitura. Cadastre planos de leitura, acompanhe o progresso de leitura de seus alunos, insira notas, tudo isso a um clique de distância e preço ideal para você.</p>
+
+				        </div>
+
+                        <a class="hvr-bounce-to-top" id="ml-button-title-now" href="/education">Adquira Agora!</a>
+                     </li>
+				  </ul>
+			 </div>
+		 </div>
+		 <div class="col-md-6 banner-pic">
+			 <img src="../images/phone.png" alt=""/>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<div class="navigation">
+	 <div class="container">
+	     <div class="fixed-header">
+			 <div class="nav-logo">
+				 <a class="scroll" href="#home"><img src="../images/nav-logo.png" alt=""/></a>
+			 </div>
+			 <div class="top-menu">
+					<span class="menu"> </span>
+				 <nav class="cl-effect-21">
+					<ul class="top-menu2">
+						<li><a class="scroll" href="/">PRINCIPAL</a></li>
+						<li><a class="scroll" href="#services">FUNCIONALIDADES</a></li>
+						<li><a class="scroll" href="#about">VALORES</a></li>
+					</ul>
+				</nav>
+				</div>
+				<script>
+        			$("span.menu").click(function(){
+        				$(".top-menu ul").slideToggle(500, function(){
+        				});
+        			});
+    			</script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+
+				<script>
+        			$(document).ready(function() {
+        				 var navoffeset=$(".navigation").offset().top;
+        				 $(window).scroll(function(){
+        					var scrollpos=$(window).scrollTop();
+        					if(scrollpos >=navoffeset){
+        						$(".navigation").addClass("fixed");
+        					}else{
+        						$(".navigation").removeClass("fixed");
+        					}
+        				 });
+
+        			 });
+    			 </script>
+
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<script defer src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(function(){
+      //SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider ').flexslider({
+    	animation: "slide",
+    	start: function(slider){
+    	  $('body').removeClass('loading');
+    	}
+      });
+    });
+</script>
+<div id="services" class="services">
+	 <div class="container">
+		 <div class="col-md-4 sercive-grid">
+			 <img src="../images/ser1.png" alt=""/>
+			 <h3>Cadastre um livro</h3>
+			 <p>Você pode cadastrar o livro do seu interesse e adicionar o planejamento de como deseja concluí-lo.</p>
+		 </div>
+		 <div class="col-md-4 sercive-grid">
+			 <img src="../images/ser2.png" alt=""/>
+			 <h3>Configure suas notificações</h3>
+			 <p>Você pode configurar o horário e dias da semana que deseja que o minha leitura lembre você dos livros que está lendo.</p>
+		 </div>
+		 <div class="col-md-4 sercive-grid">
+			 <img src="../images/ser3.png" alt=""/>
+			 <h3>Lance suas leitura</h3>
+			 <p>Lance a página ou capítulo no qual parou e veja o quanto ainda falta para você terminar sua leitura.</p>
+		 </div>
+	 </div>
+</div>
+
+<div id="about" class="about">
+	 <div class="container">
+		 <img src="../images/book.png" alt=""/>
+		 <h3>Nosso objetivo</h3>
+		 <p>O aplicativo pode ajudar você a controlar o horário de sua leitura, adicione as notificações e não perca mais a sua leitura.
+
+             Acreditamos que todas as pessoas podem ser grandes leitores e terem cada livro no seu tempo.
+
+             Baixe agora, conheça essa ferramenta e seja um grande leitor. </br>A revolução na educação acontece uma página de cada vez.
+         </br><span style="color: #e2574c;">Conheça a versão para educadores:</span>
+         </p>
+		 <a class="hvr-bounce-to-top" href="/education">Acesse agora</a>
+	 </div>
+</div>
+
+<div class="sally">
+	 <div class="container">
+		 <h3>Minha Leitura, Cada livro no seu tempo!</h3>
+	 </div>
+</div>
+</div>
