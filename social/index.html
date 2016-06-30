@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minha Leitura</title>
+<link rel="icon"
+      type="image/png"
+      href="../images/favicon.png">
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="../js/jquery.min.js"></script>
+<link href="../css/hover.css" rel="stylesheet" media="all">
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/minha-leitura.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="leitura, livros, gerenciador de leitura, android, aplicativo, minha leitura, biblioteca" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+		});
+	});
+</script>
+
+</head>
+<body>
+<div class="navigation">
+	 <div class="container">
+	     <div class="fixed-header">
+			 <div class="nav-logo">
+				 <a class="scroll" href="#home"><img src="../images/nav-logo.png" alt=""/></a>
+			 </div>
+			 <div class="top-menu">
+					<span class="menu"> </span>
+				 <nav class="cl-effect-21">
+					<ul class="top-menu2">
+						<li><a class="scroll" href="../index.html">PRINCIPAL</a></li>
+					</ul>
+				</nav>
+				</div>
+				<script>
+        			$("span.menu").click(function(){
+        				$(".top-menu ul").slideToggle(500, function(){
+        				});
+        			});
+    			</script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+
+				<script>
+        			$(document).ready(function() {
+        				 var navoffeset=$(".navigation").offset().top;
+        				 $(window).scroll(function(){
+        					var scrollpos=$(window).scrollTop();
+        					if(scrollpos >=navoffeset){
+        						$(".navigation").addClass("fixed");
+        					}else{
+        						$(".navigation").removeClass("fixed");
+        					}
+        				 });
+
+        			 });
+    			 </script>
+
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<script defer src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(function(){
+      //SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider ').flexslider({
+    	animation: "slide",
+    	start: function(slider){
+    	  $('body').removeClass('loading');
+    	}
+      });
+    });
+</script>
+
+
+<div id="about" class="about">
+	 <div class="container">
+		 <img src="../images/book.png" alt=""/>
+		 <h3>Projeto Social: Nossa Leitura!</h3>
+		 <p>
+             O projeto <i>Nossa Leitura!</i> nasceu no dia 29/06/2016 baseado na história do projeto Novo Jeito, como um empreendimento social voltado a área de educação. Nós acreditamos que a educação é direito de todos, trazendo igualdade e conhecimento bem como abrindo as portas para novos caminhos de conquistas.
+             <br/><br/>
+             Nosso objetivo é levar a leitura e conhecimento a todos que não tiveram todas as oportunidades para alcançar uma educação de qualidade.
+             <br/><br/>
+             Nosso alvo é contribuir para a sociedade com livros doados, download gratuito de livros, doações para a educação, ensino de informatização. Se você pode contribuir conosco com uma destas opções, entre em contato conosco: appminhaleitura@gmail.com
+         </p>
+	 </div>
+</div>
+
+<div class="sally">
+	 <div class="container">
+		 <h3>Minha Leitura, Cada livro no seu tempo!</h3>
+	 </div>
+</div>
+</div>
