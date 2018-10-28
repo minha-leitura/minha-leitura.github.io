@@ -1,15 +1,9 @@
-# Minha Leitura: Organizador
-###Cada livro no seu tempo
+# My Reading
 
-O aplicativo Minha Leitura tem o objetivo de gerenciar e incentivar a leitura de livros. Cadastre os livros, lance o progresso de sua leitura, insira notas e crie uma notificação para você não perder o horário da sua leitura.
+The application 'Minha Leitura' (My Reading) is designed to manage and encouraging reading books. After insert the read the user can manage it by informing the app until witch page he reads so, the app recalculates the goal of pages for the user and recalculates the data that he will finish.
 
-O app minha leitura foi o vencedor da competição Campus Mobile 3a. Edição na categoria social. E nosso objetivo é ser um empreendimento social, auxiliando a leitura e como missão transformar a educação brasileira.
+We believe that everyone can be a great reader, join us and have each book on your time.
 
-##Projeto Social: Nossa Leitura!
-###Um direito de todos
+### about us
 
-O projeto *Nossa Leitura!* nasceu no dia 29/06/2016 baseado na história do projeto Novo Jeito, como um empreendimento social voltado a área de educação. Nós acreditamos que a educação é direito de todos, trazendo igualdade e conhecimento bem como abrindo as portas para novos caminhos de conquistas.
-
-Nosso objetivo é levar a leitura e conhecimento a todos que não tiveram todas as oportunidades para alcançar uma educação de qualidade.
-
-Nosso alvo é contribuir para a sociedade com livros doados, download gratuito de livros, doações para a educação, ensino de informatização. Se você pode contribuir conosco com uma destas opções, entre em contato conosco: appminhaleitura@gmail.com
+We're a small team, developing the android app. Contact us on: appminhaleitura@gmail.com
