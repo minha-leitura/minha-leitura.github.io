@@ -213,6 +213,9 @@ margin-left:1em;
 color:#fff;
 }
 /*--about--*/
+.about.education {
+	background: #e2574c;
+}
 .about{
 padding:8% 0;
 text-align:center;
@@ -224,6 +227,10 @@ margin-bottom:4em;
 color:#385461;
 font-size:2.5em;
 margin-bottom:0.7em;
+}
+.about.education h3,
+.about.education p {
+    color: #fff;
 }
 .about p{
 color:#909090;
@@ -241,6 +248,18 @@ font-size:1.15em;
 border:3px solid #E2574C;
 padding:8px 1.5em;
 margin-top:3em;
+}
+.about.education a {
+    color:#fff;
+    border:3px solid #fff;
+}
+.about.education .hvr-bounce-to-top:hover, 
+.about.education .hvr-bounce-to-top:focus, 
+.about.education .hvr-bounce-to-top:active {
+    color: #E2574C;
+}
+.about.education .hvr-bounce-to-top::before {
+    background: #fff;
 }
 /*--team--*/
 .team{
